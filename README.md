@@ -44,7 +44,7 @@ To get a local copy up and running, follow these simple steps:
    ```
 
 ## Live Demo
-Check out the live demo of the project [here]([#](https://phani2425.github.io/ToDesktop-Clone/)).
+Check out the live demo of the project [here](https://phani2425.github.io/ToDesktop-Clone/).
 
 
 ## Contributing
