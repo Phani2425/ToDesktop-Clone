@@ -4,15 +4,3 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    transition: all 200ms;
-    scroll-behavior: smooth;
-}
-body{
-    @apply font-body;
-    overflow-x: hidden;
-    
-}
-h1,h2,h3{
-    @apply font-display text-gray-800;
-}

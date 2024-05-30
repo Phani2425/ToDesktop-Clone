@@ -689,6 +689,10 @@ video {
   height: 3rem;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .h-2{
   height: 0.5rem;
 }
@@ -721,10 +725,6 @@ video {
   height: 100%;
 }
 
-.h-16{
-  height: 4rem;
-}
-
 .max-h-12{
   max-height: 3rem;
 }
@@ -745,8 +745,16 @@ video {
   min-height: 100vh;
 }
 
+.w-1{
+  width: 0.25rem;
+}
+
 .w-12{
   width: 3rem;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .w-2{
@@ -770,14 +778,6 @@ video {
   width: 100vw;
 }
 
-.w-1{
-  width: 0.25rem;
-}
-
-.w-16{
-  width: 4rem;
-}
-
 .min-w-16{
   min-width: 4rem;
 }
@@ -794,6 +794,10 @@ video {
   max-width: 5rem;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -808,10 +812,6 @@ video {
 
 .max-w-\[700px\]{
   max-width: 700px;
-}
-
-.max-w-2xl{
-  max-width: 42rem;
 }
 
 .flex-1{
@@ -842,13 +842,13 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-2{
-  --tw-translate-y: 0.5rem;
+.translate-x-1{
+  --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-1{
-  --tw-translate-x: 0.25rem;
+.translate-y-2{
+  --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -930,6 +930,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-11{
+  gap: 2.75rem;
+}
+
 .gap-12{
   gap: 3rem;
 }
@@ -968,10 +972,6 @@ video {
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-11{
-  gap: 2.75rem;
 }
 
 .overflow-hidden{
@@ -1294,6 +1294,11 @@ video {
   line-height: 1;
 }
 
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
@@ -1330,11 +1335,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -1482,22 +1482,6 @@ video {
 
 .duration-200{
   transition-duration: 200ms;
-}
-
-*{
-  transition: all 200ms;
-  scroll-behavior: smooth;
-}
-
-body{
-  font-family: Inter, sans-serif;
-  overflow-x: hidden;
-}
-
-h1,h2,h3{
-  font-family: Poppins, sans-serif;
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .hover\:translate-y-\[-5px\]:hover{
@@ -1754,3 +1738,4 @@ h1,h2,h3{
     line-height: 1.75rem;
   }
 }
+
