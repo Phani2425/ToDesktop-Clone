@@ -9,10 +9,12 @@
     <style>
         *{
             transition: all 200ms;
+            scroll-behavior: smooth;
         }
         body{
             @apply font-body;
             overflow-x: hidden;
+            
         }
         h1,h2,h3{
             @apply font-display text-gray-800;
@@ -21,7 +23,7 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    
         <!-- ----------------------nav bar---------------------- -->
 
         <nav class="fixed top-0 left-0 right-0 z-20 shadow-lg flex justify-between items-center px-5 py-3 bg-white">
@@ -32,11 +34,11 @@
             </a>
         <!--links for large screen  -->
             <ul class="hidden lg:flex justify-evenly items-center gap-14">
-                <li class="cursor-pointer font-medium font-body hover:text-primary">Pricing</li>
-                <li class="cursor-pointer font-medium font-body hover:text-primary">Docs</li>
-                <li class="cursor-pointer font-medium font-body hover:text-primary">Changelog</li>
-                <li class="cursor-pointer font-medium font-body hover:text-primary">Blogs</li>
-                <li class="cursor-pointer font-medium font-body hover:text-primary">Login</li>
+                <a href="#price"><li class="cursor-pointer font-medium font-body hover:text-primary">Pricing</li></a>
+                <a href="#"><li class="cursor-pointer font-medium font-body hover:text-primary">Docs</li></a>
+                <a href="#"><li class="cursor-pointer font-medium font-body hover:text-primary">Changelog</li></a>
+                <a href="#"><li class="cursor-pointer font-medium font-body hover:text-primary">Blogs</li></a>
+                <a href="#"><li class="cursor-pointer font-medium font-body hover:text-primary">Login</li></a>
             </ul>
 
            <button class="hidden lg:flex justify-evenly items-center gap-3 cursor-pointer border-2 hover:border-slate-400 rounded-lg px-6 py-2">
@@ -51,11 +53,11 @@
                 <i class="fa-solid fa-xmark" onclick="handleMenu2()"></i>
             </div>
             <ul class="flex flex-col justify-evenly items-start gap-6 p-10">
-                <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Pricing</li>
-                <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Docs</li>
-                <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Changelog</li>
-                <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Blogs</li>
-                <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Login</li>
+                <a href="#price"><li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Pricing</li></a>
+                <a href="#"><li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Docs</li></a>
+                <a href="#"><li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Changelog</li></a>
+               <a href="#"> <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Blogs</li></a>
+               <a href="#"> <li class="block rounded-lg hover:bg-gray-50 cursor-pointer font-medium font-body hover:text-primary">Login</li></a>
             </ul>
             <div class="w-full h-[3px] bg-gray-300"></div>
             <br>
@@ -77,7 +79,7 @@
             </div>
         </nav>
         <!-- ----------------------end of nav bar------------------- -->
-    </div>
+
  
    <!-- main -->
     <main class="mt-16">
@@ -394,7 +396,7 @@
         <section class="w-full  p-12 flex flex-col gap-10">
            <h1 class="text-5xl font-semibold leading-snug max-w-[600px]">ToDesktop handles the details</h1>
            <!-- grid -->
-           <div  class=" flex flex-col gap-8 lg:grid lg:grid-cols-3 " style="grid-auto-rows: 186px;">
+           <div  class=" flex flex-col gap-6 lg:grid lg:grid-cols-3 " style="grid-auto-rows: 186px;">
                <div class="w-full h-auto p-[1px] hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200 rounded-lg flex justify-center items-center lg:row-span-1">
                 <div class=" w-full h-full flex flex-col justify-between items-center gap-5 px-[32px] py-[32px] border border-gray-300 bg-gray-100 rounded-lg hover:border-none hover:bg-gradient-to-br hover:from-red-50 hover:via-purple-50 hover:to-yellow-50">
                     <h2 class="text-2xl font-medium">Native Notifications</h2>
@@ -441,7 +443,7 @@
                </div>
            </div>
            <!-- sliding section -->
-           <div  class="mt-28 w-full h-28 border border-gray-500 rounded-lg overflow-x-hidden flex items-center">
+           <div  class="mt-28 w-full h-28 border border-gray-500 rounded-lg overflow-x-hidden flex justify-center items-center">
             <div id="line4" class=" flex  items-center gap-10 -translate-x-96">
                 <span class="text-7xl -translate-y-5">.</span>
             <h1 class="text-2xl font-semibold text-nowrap">Multi-window support</h1>
@@ -627,28 +629,29 @@
         </div>
          <!-- ----------------------end of testimonials section-------------------------- -->
          
-         <!-- ----------------------plans section------------------------------------ -->
-         <section class="mt-16 w-full p-12">
+         <!-- ----------------------pricing section------------------------------------ -->
+         <section id="price" class="mt-16 w-full p-12">
               <h1 class="text-5xl sm:font-semibold mb-14 max-w-[600px] leading-snug">Choose a plan that fits your needs</h1>
               <div class="w-full flex flex-col gap-6 lg:flex-row  justify-evenly " >
 
-              <div class="px-10 py-16 flex flex-col  justify-between items-start border rounded-lg border-gray-500 lg:border-none lg:bg-gray-100 lg:w-[460px]">
+              <div class="px-10 py-16 flex flex-col gap-5  justify-evenly  items-start border rounded-lg border-gray-500 lg:border-none lg:bg-gray-100 lg:w-[460px] hover:scale-105">
                   <h2 class="text-3xl font-medium">Free</h2>
                   <p class="text-sm text-gray-800">For personal use or testing your app before deploying to customers.</p>
+                  <p class="text-xl"><span class="font-bold text-2xl">$0</span>/month</p>
                   <h4 class="text-lg font-normal">
                     KEY FEATURES</h4>
                     <span class="flex items-center gap-2"><i class="fa-solid fa-check"></i>
                         Free for personal use</span>
                     <span class="flex items-center gap-2"><i class="fa-solid fa-check"></i>
                         Free for personal use</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-check"></i>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-xmark"></i>
                         Free for personal use</span>
-                    <span class="flex items-center gap-2"><i class="fa-solid fa-check"></i>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-xmark"></i>
                         Free for personal use</span>
                   <button class="w-full  text-center py-4 px-16 border border-gray-600 rounded-md bg-primary text-white font-semibold hover:bg-blue-800">Read Docs</button>
               </div>
 
-              <div class="px-10 py-16 flex flex-col gap-5  justify-evenly items-start border rounded-lg border-gray-500 lg:border-none lg:bg-gray-100 lg:w-[460px]">
+              <div class="px-10 py-16 flex flex-col gap-5  justify-evenly items-start border rounded-lg border-gray-500 lg:border-none lg:bg-gray-100 lg:w-[460px]  hover:scale-105">
                 <h2 class="text-3xl font-medium">Essential</h2>
                 <p class="text-sm text-gray-800">For simple desktop apps.</p>
                 <p class="text-xl"><span class="font-bold text-2xl">$99</span>/month</p>
@@ -660,12 +663,12 @@
                       Free for personal use</span>
                   <span class="flex items-center gap-2"><i class="fa-solid fa-check"></i>
                       Free for personal use</span>
-                  <span class="flex items-center gap-2"><i class="fa-solid fa-check"></i>
+                  <span class="flex items-center gap-2"><i class="fa-solid fa-xmark"></i>
                       Free for personal use</span>
                 <button class="w-full  text-center py-4 px-16 border border-gray-600 rounded-md bg-primary text-white font-semibold hover:bg-blue-800">Read Docs</button>
             </div>
 
-            <div class="relative px-10 py-16 flex flex-col gap-5  justify-evenly items-start border rounded-lg border-gray-500  lg:w-[460px] lg:border-none lg:bg-gray-100">
+            <div class="relative px-10 py-16 flex flex-col gap-5  justify-evenly items-start border rounded-lg border-gray-500  lg:w-[460px] lg:border-none lg:bg-gray-100 hover:scale-105">
                 <h2 class="text-3xl font-medium">Professional</h2>
                 <p class="text-sm text-gray-800">For sophisticated desktop apps.</p>
                 <p class="text-xl"><span class="font-bold text-2xl">$199</span>/month</p>
@@ -685,6 +688,89 @@
             </div>
             </div>
          </section>
+        <!-- --------------------end of pricing section----------------------- -->
+
+        <section class="w-full mt-16 p-12">
+            <!-- --------------------FAQ section-------------------------------- -->
+            <h1 class="text-5xl font-semibold">FAQs</h1>
+            <div class="w-full flex flex-col gap-6 lg:grid lg:grid-cols-2 pt-10">
+                
+                <div aria-controls="faq1" class="w-full relative max-h-[200px] border rounded-md border-gray-400 px-8 py-6 flex flex-col gap-5" onclick="faq()">
+                    <h3 >Is ToDesktop For Me?</h3>
+                    <i id="faq1" class="fa-solid fa-angle-up text-xl absolute right-8"></i>
+                    <p id="faq1" class="" >That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                    </p>
+                </div>
+
+                <div class="w-full relative max-h-[200px] border rounded-md border-gray-400 px-8 py-6 flex flex-col gap-5" onclick="faq()">
+                    <h3 >Is ToDesktop For Me?</h3>
+                    <i id="arrow" class="fa-solid fa-angle-up text-xl absolute right-8"></i>
+                    <p id="para" class="" >That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                    </p>
+                </div>
+
+                <div class="w-full relative max-h-[200px] border rounded-md border-gray-400 px-8 py-6 flex flex-col gap-5" onclick="faq()">
+                    <h3 >Is ToDesktop For Me?</h3>
+                    <i id="arrow" class="fa-solid fa-angle-up text-xl absolute right-8"></i>
+                    <p id="para" class="" >That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                    </p>
+                </div>
+
+                <div class="w-full relative  max-h-[200px] border rounded-md border-gray-400 px-8 py-6 flex flex-col gap-5" onclick="faq()">
+                    <h3 >Is ToDesktop For Me?</h3>
+                    <i id="arrow" class="fa-solid fa-angle-up text-xl absolute right-8"></i>
+                    <p id="para" class="" >That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                    </p>
+                </div>
+
+                <div class="w-full relative  max-h-[200px] border rounded-md border-gray-400 px-8 py-6 flex flex-col gap-5" onclick="faq()">
+                    <h3 >Is ToDesktop For Me?</h3>
+                    <i id="arrow" class="fa-solid fa-angle-up text-xl absolute right-8"></i>
+                    <p id="para" class="" >That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                    </p>
+                </div>
+
+                <div class="w-full relative  max-h-[200px] border rounded-md border-gray-400 px-8 py-6 flex flex-col gap-5" onclick="faq()">
+                    <h3 >Is ToDesktop For Me?</h3>
+                    <i id="arrow" class="fa-solid fa-angle-up text-xl absolute right-8"></i>
+                    <p id="para" class="" >That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                    </p>
+                </div>
+
+            </div>
+            <!-- --------------------FAQ section-------------------------------- -->
+
+            <!-- -------------------------footer--------------------------- -->
+            <div class="w-full p-[1px] hover:bg-gradient-to-br hover:from-red-300 hover:via-purple-300 hover:to-yellow-300 rounded-lg flex justify-center items-center mt-28">
+                <div class="w-full h-full px-10 py-10 flex flex-col-reverse justify-between items-center gap-6 border rounded-lg border-gray-300 bg-gray-100 lg:flex-row hover:bg-gradient-to-br hover:from-red-50 hover:via-purple-50 hover:to-yellow-50">
+
+                    <!-- logo -->
+              <a class="flex justify-between items-center cursor-pointer gap-3" href="#">
+                  <img class="max-w-12 max-h-12" src="./assets/asset 0.png" alt="">
+                  <span class="text-lg font-medium font-display">ToDesktop</span>
+              </a>
+              <!-- -------link------- -->
+              <div class="flex flex-col-reverse lg:flex-row lg:items-center gap-6">
+                  <div class="flex justify-center items-center gap-10 lg:gap-5">
+                      <a class="cursor-pointer text-[25px]" href="#"><i class="fa-brands fa-github text-gray-600 hover:text-black "></i></a>
+                      <a class="cursor-pointer text-[25px]" href="#"><i class="fa-brands fa-twitter text-gray-600 hover:text-black "></i></a>
+                  </div>
+                  <a class="cursor-pointertext-gray-600 hover:text-black  text-xl" href="#">Documentaion</a>
+              </div>
+              </div>
+            </div>
+
+            <!-- ------------last section------------ -->
+            <div class="w-full mt-24 mb-10 flex flex-col justify-center items-center gap-7">
+                <span>
+                    <img src="./assets/asset 54.svg" alt="" width="25px" class="inline px-1">
+                    <span>A Y Combinator company.</span>
+                </span>
+                <span class="text-gray-500">© 2024 ToDesktop, Inc. All rights reserved.</span>
+
+            </div>
+
+        </section>
 
         
     </main>
